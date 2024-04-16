@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/LogoMinHao.png" type="assents/x-icon">
+    <link rel="stylesheet" href="stylefood.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Canh khoai tây thịt bò</title>
+</head>
+<body>
+    <div id="header">
+        <a href="index.html" class="logo">
+            <img src="assets/LogoMinHao.png" alt="" style="width: 200px; height:80px;">
+        </a>
+        <div class="search-container">
+            <input type="text" id="searchInput1" oninput="showSuggestions()" placeholder="Search...">
+            <div id="clearButton1" class="clear-button1">&#10006;</div>
+            <div id="suggestions1" class="suggestions1"></div>
+          </div>
+        <div id="menu">
+            <div class="item">
+                <a href="index.html">TRANG CHỦ</a>
+            </div>
+            <div class="item">
+                <a href="congthuc.html" class="abc">CÔNG THỨC</a>
+            </div>
+            <div class="item">
+                <a href="https://thanhnien.vn/nau-an.html">BLOG</a>
+            </div>
+            <div class="item">
+                <a href="contact.html">LIÊN HỆ</a>
+            </div>
+            <div class="item">
+                <a href="About.html" >GIỚI THIỆU</a>
+            </div>
+        </div>
+        <div id="actions">
+            <button class="btnLogin-popup">
+                <i class="fa-regular fa-user"></i>
+                <div style="margin: 20px; display: flex; align-items: center; justify-content: center;">
+                   
+                    <div class="text">Đăng nhập</div>
+                </div>
+                    
+                </button>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <div class="wrapper-login ">
+        <span class="icon-close">
+            <i class="fa-solid fa-x"></i>
+        </span>
+
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remeber me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <P>Bạn chưa có tài khoản ?
+                        <a href="#" class="register-link">Register</a>
+                    </P>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">I agree to the terms & conditions</label>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Bạn đã có tài khoản ?
+                        <a href="#" class="login-link">Login</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="banner-with-title">
+        <img src="assets/bannertitle.png" alt="Banner Image" style="width: 100%;">
+        <div class="banner-title">
+            <h2>CANH KHOAI TÂY THỊT BÒ NGON </h2>
+        </div>
+    </div>
+    <div id="content">
+        
+        <div class="content-wrapper">
+        
+            <div class="section">
+                <div class="image-container">
+                    <img src="https://yummyday.vn/uploads/images/canh-khoai-tay-thit-bo-1.jpg" alt="Sườn chua ngọt">
+                    <figure style="background-color: #F1EDED;width: 100%;">Món canh khoai tây thịt bò đầy dưỡng chất</figure>
+                </div>
+                
+                <h2>1.Nguyên liệu cần chuẩn bị cho món canh khoai tây thịt bò</h2>
+                <div style="color: black;">
+                    <li>Thịt bò:200g</li>
+                    <li>Khoai tây: 2 củ</li>
+                    <li>Hành khô: 50 gram</li>
+                    <li>gừng: 1 củ</li>
+                    <li>rau mùi</li>
+                    <li>Gia vị: Xì dầu, dầu ăn, muối, bột nêm</li>
+                   
+                </div>
+        
+        
+            </div>
+
+            <div class="section">
+                <h2>2. Cách nấu canh thịt bò khoai tây thơm ngon</h2>
+                <h3>Bước 1: Sơ chế nguyên liệu</h3>
+                <div class="image-container">
+                    <img src="https://yummyday.vn/uploads/images/canh-thit-bo-khoai-tay.jpg" alt="">
+                    <figure style="background-color: #F1EDED;width: 100%;">Nguyên liệu cho món canh khoai tây thịt bò</figure>
+                </div><br>
+                <li> Cà rốt, khoai tây các bạn đem gọt sạch vỏ, rửa sạch và cắt thành khối vuông cho đẹp mắt</li>
+
+                    <p><li>Hành khô và gừng tươi đem gọt vỏ, rửa sạch rồi cắt thành từng miếng mỏng và để riêng</li></p>
+                    
+                    <li>Cà chua đem rửa sạch, thái thành múi cau</li>
+                <p><li>  Rau mùi đem bỏ gốc và rửa sạch</li></p>
+                    <p><li>Thịt bò các bạn đem rửa sạch, rồi thái thành khối vuông khoảng 1 đốt tay, sau đó, cho thịt bò vào trong tô ướp chung với 1 muỗng hạt nêm, 2 muỗng xì dầu, 20 gram hành khô, và vài lát gừng. Trộn cho đều để gia vị được ngấm trong vòng khoảng 15 phút.</li></p>
+                    <h3>Tiến hành nấu canh thịt bò khoai tây</h3>
+                    <li>Bắc 1 cái nồi lên bếp, cho dầu ăn vào rồi đợi cho nóng, cho 30 gram hành khô vào rồi phi thơm. Đổ phần thịt bò đã được ướp vào xào chung cho thịt săn.</li>
+                    <div class="image-container">
+                        <img src="https://yummyday.vn/uploads/images/canh-khoai-tay-thit-bo-7.jpg" alt="">
+                        <figure style="background-color: #F1EDED;width: 30%; margin-left: 70vh;">Xào cho thịt bài săn lại</figure>
+                    </div><br>
+                    <li>Cho khoảng 1 chén nước và nấu chung với thịt bò, sau đó nêm nếm lại gia vị cho vừa ăn.</li>
+                    <li>Hầm thịt bò trong vòng 1 tiếng đồng hồ để cho thịt bò được chín mềm, rồi cho cà rốt, khoai tây vào hầm cùng
+
+                    </li>
+                    <div class="image-container">
+                        <img src="https://yummyday.vn/uploads/images/canh-khoai-tay-thit-bo.jpg" alt="">
+                        <figure style="background-color: #F1EDED;width: 30%; margin-left: 70vh;">Hầm thịt cùng củ quả cho mềm</figure>
+                    </div><br>
+                    <li>Nấu cho đến thịt bò, khoai tây và cà rốt đều chín mềm thì bắt đầu cho cà chua vào</li>
+                    <h2>2.Yêu cầu thành phẩm món canh thịt bò khoai tây</h2>
+                    <div class="image-container">
+                        <img src="https://yummyday.vn/uploads/images/cach-nau-canh-thit-bo-khoai-tay.jpg" alt="">
+                        <figure style="background-color: #F1EDED;width: 30%; margin-left: 70vh;">Thành phẩm món canh khoai tây thịt bò</figure>
+                    </div><br>
+                <li><b>Canh khoai tây thịt bò</b> sau khi chế biến xong có được màu sắc bắt mắt, hấp dẫn, mùi thơm không thể cưỡng lại</li>
+                <li>Thịt bò thơm mềm, khoai tây và cà rốt đều chín mềm và không bị nát, nước canh có ngọt thanh, đậm đà và bắt vị</li>
+                
+                </div><br>
+                <h2>3.Những điều lưu ý khi nấu món canh thịt bò nấu với khoai tây</h2>
+                <li>Các bạn nên lựa thịt bò tươi ngon, nhiều dinh dưỡng, không nên chọn mua các miếng thịt có mỡ mềm. Khi chọn thịt bò bạn không nên mua những miếng thịt với thớ lớn, cứng, mà hãy lựa chọn những thớ thịt nhỏ và mềm nhé!</li>
+                <li>Nên ướp để cho thịt được ngấm gia vị ít nhất là 15 phút</li>
+                <li>Sau khi xào  thịt săn và đổ nước vào ninh, thì bạn nên để lửa thật lớn cho đến khi  canh sôi  lên thì mới chỉnh lại lửa nhỏ để ninh thịt</li><br>
+
+                <h3>Xem chi tiết <a href="https://www.youtube.com/watch?v=lMMvbGB82M8" style="text-decoration: underline;">tại đây</a></h3>
+                <div class="VIDEO" style="display: flex;
+                align-items: center;justify-content: center; margin-top: 30px;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lMMvbGB82M8?si=eqzYP2j8GX7r-kKS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div><br>
+
+            
+                
+                
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+<div id="footer">
+    <div class="box1">
+        <div class="logo">
+            <img src="assets/LogoMinHao.png" alt="" style="width: 200px; height: auto;">
+        </div>
+    </div>
+    <div class="box">
+        <h3>NỘI DUNG</h3>
+        <ul class="quick-menu">
+            <div class="item">
+                <a href="index.html">Trang chủ</a>
+            </div>
+            <div class="item">
+                <a href="congthuc.html">Món ăn</a>
+            </div>
+            <div class="item">
+                <a href="https://thanhnien.vn/nau-an.html">Blog</a>
+            </div>
+            <div class="item">
+                <a href="">Liên hệ</a>
+            </div>
+        </ul>
+    </div>
+    <div class="box">
+        <h3>LIÊN HỆ</h3>
+        <div class="address">
+            <img src="./assets/location.png" class="icon">
+            <span>38 Yen Bai, VNPT Da Nang Building, Hai Chau, Danang, Vietnam</span>
+        </div>
+        <div class="telephone">
+            <img src="./assets/telephone.png" class="icon2">
+            <span>+84 941162396</span>
+        </div>
+        <div class="gmail">
+            <img src="./assets/email.png" class="icon3">
+            <span>arigatocookingcompany@gmail.com</span>
+        </div>
+    </div>
+</div>
+<script src="congthuc.js"></script>
+</html>

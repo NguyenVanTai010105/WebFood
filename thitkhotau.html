@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="assets/LogoMinHao.png" type="assents/x-icon">
+    <link rel="stylesheet" href="stylefood.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Thịt kho tàu</title>
+</head>
+
+<body>
+    <div id="header">
+        <a href="index.html" class="logo">
+            <img src="assets/LogoMinHao.png" alt="" style="width: 200px; height:80px;">
+        </a>
+        <div class="search-container">
+            <input type="text" id="searchInput1" oninput="showSuggestions()" placeholder="Search...">
+            <div id="clearButton1" class="clear-button1">&#10006;</div>
+            <div id="suggestions1" class="suggestions1"></div>
+          </div>
+        <div id="menu">
+            <div class="item">
+                <a href="index.html">TRANG CHỦ</a>
+            </div>
+            <div class="item">
+                <a href="congthuc.html" class="abc">CÔNG THỨC</a>
+            </div>
+            <div class="item">
+                <a href="https://thanhnien.vn/nau-an.html">BLOG</a>
+            </div>
+            <div class="item">
+                <a href="contact.html">LIÊN HỆ</a>
+            </div>
+            <div class="item">
+                <a href="About.html" >GIỚI THIỆU</a>
+            </div>
+        </div>
+        <div id="actions">
+            <button class="btnLogin-popup">
+                <i class="fa-regular fa-user"></i>
+                <div style="margin: 20px; display: flex; align-items: center; justify-content: center;">
+                   
+                    <div class="text">Đăng nhập</div>
+                </div>
+                    
+                </button>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <div class="wrapper-login ">
+        <span class="icon-close">
+            <i class="fa-solid fa-x"></i>
+        </span>
+
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email"  required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remeber me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <P>Bạn chưa có tài khoản ?
+                        <a href="#" class="register-link">Register</a>
+                    </P>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">I agree to the terms & conditions</label>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Bạn đã có tài khoản ?
+                        <a href="#" class="login-link">Login</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="banner-with-title">
+        <img src="assets/bannertitle.png" alt="Banner Image" style="width: 1500px;">
+        <div class="banner-title">
+            <h1>THỊT BA CHỈ KHO TÀU </h1>
+        </div>
+    </div>
+    <div id="content">
+
+        <div class="content-wrapper">
+
+            <div class="section">
+                <div class="image-container">
+                    <img src="https://yummyday.vn/uploads/images/cach-lam-thit-heo-kho-tau.jpg" title="thịt kho tàu"
+                        alt="Thịt kho tàu">
+                    <figure style="background-color: #F1EDED;">Thịt kho tàu ngon chuẩn vị mẹ nấu</figure>
+
+                </div>
+                <h1 style="text-decoration: underline;">1. Nguyên liệu cần chuẩn bị cho món thịt heo kho tàu:</h1>
+                <div style="color: black;">
+                    <li>Thịt ba chỉ: 1 kg</li>
+                    <li>Dừa xiêm: 2 trái</li>
+                    <li>Trứng gà: 10 quả</li>
+                    <li>Tỏi: 4 củ</li>
+                    <li>Ớt: 5 trái</li>
+                    <li>Gia vị cần thiết: đường, nước mắm, muối, hạt nêm…</li>
+                    <div style="display: flex;justify-content: center;"><img
+                            src="https://yummyday.vn/uploads/images/thit-heo-kho-tau-2.jpg" alt=""></div>
+                    <div style="display: flex;justify-content: center; background-color: #F1EDED;">
+                        <figure>Nguyên liệu cần thiết cho món thịt heo kho tàu</figure>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="section">
+                <h1 style="text-decoration: underline;">2. Cách kho tàu thịt heo siêu ngon bá cháy: </h1>
+                <h2>Bước 1: Sơ chế nguyên liệu</h2>
+                <div class="image-container">
+                    <img src="https://yummyday.vn/uploads/images/thit-heo-kho-tau-3.jpg" alt="">
+                    <div style=" background-color: #F1EDED; ">
+                        <figure>Cắt thịt heo thành khúc vuông rồi đem ướp</figure>
+                    </div>
+                </div><br>
+                <li> Bước đầu tiên của món <b>thịt heo kho tàu</b> các bạn sẽ luộc trứng trước, chuẩn bị 1 nồi nhỏ rồi
+                    cho nước ngập qua lượng trứng cần luộc, sau đó vặn lửa to để nước sôi luộc trứng. Thông thường chỉ
+                    cần luộc trứng trong 15-20 phút là trứng chín, sau đó tắt bếp để nguội. Đổ sườn ra rổ rồi xả nước
+                    trực tiếp vào sườn để loại bỏ hết bọt bẩn cùng với những vụn thịt.</li>
+
+                <p>
+                    <li> Khi trứng nguội, FoodCooking mách bạn 1 mẹo nhỏ để lột bỏ vỏ trứng nhanh hơn đó là ngâm trứng
+                        trong thau nước lạnh, rồi vớt trứng ra thau rồi dùng 1 đĩa to xốc mạnh vài cái để vỏ trứng dễ
+                        nứt ra. Việc này sẽ dễ dàng cho bạn bóc vỏ trứng ra từng mảng mà tránh phải bóc bị lắt nhắt và
+                        dễ trúng vào thịt trứng nhìn không thẩm mỹ.</li>
+                </p>
+
+
+                <div class="image-container">
+                    <img src="https://th.bing.com/th/id/OIG1.yv1BzPb5DmoDRxUeYqH1?w=1024&h=1024&rs=1&pid=ImgDetMain"
+                        alt="">
+                    <figure style="background-color: #F1EDED;">Thịt kho tàu</figure>
+                </div><br>
+
+
+            </div><br>
+
+            <h2>Bước 2: Tiến hành nấu thịt kho tàu ngon bá cháy</h2>
+            <div class="image-container">
+                <img src="https://afamilycdn.com/150157425591193600/2023/3/13/luoc1-15051950-05523084-1678684085229-1678684085677229981362.jpg"
+                    alt="">
+                <figure style="background-color: #F1EDED;">Cho thêm dấm vào giúp dễ luộc trứng hơn</figure>
+            </div><br>
+            <p>
+                <li>Các bạn có thể tiết kiệm thời gian luộc trứng bằng cách sơ chế số thịt ba chỉ nhé! Thịt ba chỉ tươi
+                    sẽ còn sót vài sợi lông trên thịt, các bạn sẽ dùng dao lam hoặc nhíp để lấy sạch đi số lông sót trên
+                    thịt, sau đó các bạn rửa sạch với nước và cắt thành khối nhỏ, hình chữ nhật dài khoảng ngón trỏ hoặc
+                    có thể đo bằng đốt ngón tay sao cho vừa ăn là được.</li>
+                <li>Sau khi cắt xong, các bạn đem số thịt ba chỉ đi ướp với công thức như sau: 4 muỗng đường, nửa muỗng
+                    muối, 1 muỗng tỏi băm nhỏ, nửa muỗng hạt nêm rồi trộn thịt với gia vị sao cho thịt được thấm đều và
+                    để nguyên trong vòng 45 phút- 1 tiếng để thịt thấm dần đều.</li>
+            </p>
+            <h2>Bước 3: Cách kho tàu thịt heo</h2>
+            <p>
+                <li>Sau khi luộc trứng và ướp thịt, các bạn chuẩn bị 1 nồi lớn, cho số thịt đã ướp vào bật bếp và đảo
+                    thịt sao cho thịt được săn lại, tiếp theo bạn mới cho thêm nước dừa vào sau đó nêm nếm thêm 1 ít hạt
+                    nêm, nửa chén nước mắm nhỏ. Để cho món ăn được đậm đà, nếu nước kho chưa ngập qua thịt thì các bạn
+                    thêm 1 ít nước nhé, nếu như bị nhạt thì nêm nếm sao cho vừa khẩu vị là được.
+                </li>
+            </p>
+            <p>
+                <li>Vì để thịt kho được mềm hơn, các bạn nên để lửa nhỏ riu riu, sau tầm 30-45 phút khi thịt mềm, thì
+                    các bạn cho trứng vào. Vì khi cho trứng vào kho chung có thể khiến thịt bị chai và cứng nên các bạn
+                    lưu ý bỏ trứng vào bước cuối cùng nhé. Để trứng thấm gia vị hơn có thể dùng tăm đâm những lỗ nhỏ rồi
+                    dùng muỗng múc nước kho xối lên trứng là được, tầm 5 phút thì tắt bếp và thưởng thức món ăn nhé!
+                </li>
+            </p>
+            <p>
+                <li>Nếu tiện hơn, các bạn có thể kho món này trong nồi áp suất chỉ trong 40 phút là món ăn có thể ra lò
+                    mà không cần phải vất vả canh lửa to hay lửa nhỏ luôn nhé! </li>
+            </p>
+
+            <h2>Mẹo để kho thịt nhanh mềm và ít thời gian </h2>
+            <p>
+                <li>Trong lúc kho thịt sẽ khá tốn thời gian đợi thịt mềm, vì thế 1 mẹo nhỏ đó là các bạn có thể thêm 1
+                    muỗng cà phê bột baking soda vào nồi để kho, điều này có thể làm thịt nhanh mềm hơn đó.</li>
+            </p>
+            <p>
+                <li>Việc nêm nếm cho món ăn này cũng khá phức tạp nên bạn có thể thay thế bằng gói gia vị nêm sẵn, gói
+                    này bạn sẽ ướp cùng với thịt, ướp xong chỉ cần đem ra kho là được.</li>
+            </p>
+            <p>
+                <li>Để thịt được nhanh mềm và thấm gia vị nhanh nhất các bạn cũng để ý lúc cắt thịt nhen, chỉ cần cắt
+                    miếng to trung bình là được.</li>
+            </p>
+            <p>
+                <li>Nếu như để ăn lâu ngày các bạn thay phần nước dừa bằng nước lọc bình thường để có thể dễ hâm lại
+                    hơn.</li>
+            </p>
+            <br>
+            <h2 style="text-decoration: underline;">3.Những sự kết hợp với thịt heo kho tàu</h2>
+            <div class="image-container">
+                <img src="https://www.cet.edu.vn/wp-content/uploads/2018/11/hinh-anh-thit-kho-cu-cai.jpg" alt="">
+                <figure style="background-color: #F1EDED;">Thưởng thức cực phẩm <b>thịt heo kho tàu</b> cùng với cơm
+                    trắng</figure>
+                <li>Món thịt heo kho tàu ăn ngon thì không thể thiếu những món đi kèm, đặc biệt là món canh. Món này các
+                    bạn có thể ăn cùng với canh dưa cải, vì vị chua từ dưa cải có thể khiến cho bạn ăn món thịt heo kho
+                    tàu ngon hơn vì nó sẽ tôn vị của món ăn hơn nè.</li>
+                </p><br>
+                <p>
+                    <li>Vào ngày tết, thịt heo kho tàu còn có thể ăn kèm với bánh tét, bánh chưng và củ kiệu nữa, đảm
+                        bảo ngon tuyệt vời luôn!</li>
+                </p>
+            </div>
+
+            <h3>Xem chi tiết <a href="https://www.youtube.com/watch?v=QBBRIw3eP-s"
+                    style="text-decoration: underline;">tại đây</a></h3>
+            <div class="VIDEO" style="display: flex;
+                align-items: center;justify-content: center; margin-top: 30px;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QBBRIw3eP-s?si=ZtTIAPhn1fa2ZskA"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div><br>
+      
+</body>
+<div id="footer">
+    <div class="box1">
+        <div class="logo">
+            <img src="assets/LogoMinHao.png" alt="" style="width: 200px; height: auto;">
+        </div>
+    </div>
+    <div class="box">
+        <h3>NỘI DUNG</h3>
+        <ul class="quick-menu">
+            <div class="item">
+                <a href="index.html">Trang chủ</a>
+            </div>
+            <div class="item">
+                <a href="congthuc.html">Món ăn</a>
+            </div>
+            <div class="item">
+                <a href="https://thanhnien.vn/nau-an.html">Blog</a>
+            </div>
+            <div class="item">
+                <a href="">Liên hệ</a>
+            </div>
+        </ul>
+    </div>
+    <div class="box">
+        <h3>LIÊN HỆ</h3>
+        <div class="address">
+            <img src="./assets/location.png" class="icon">
+            <span>38 Yen Bai, VNPT Da Nang Building, Hai Chau, Danang, Vietnam</span>
+        </div>
+        <div class="telephone">
+            <img src="./assets/telephone.png" class="icon2">
+            <span>+84 941162396</span>
+        </div>
+        <div class="gmail">
+            <img src="./assets/email.png" class="icon3">
+            <span>arigatocookingcompany@gmail.com</span>
+        </div>
+    </div>
+</div>
+<script src="congthuc.js"></script>
+</html>

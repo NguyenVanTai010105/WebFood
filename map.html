@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Map Example</title>
+    <style>
+        /* Đảm bảo rằng bản đồ sẽ hiển thị trong cả trình duyệt */
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h3>Địa chỉ: 38 Yên Bái, Hải Châu 1, Hải Châu, Đà Nẵng 550000, Việt Nam</h3>
+    <!-- Thẻ div để chứa bản đồ -->
+    <div id="map"></div>
+    
+    <script>
+        // Hàm khởi tạo bản đồ
+        function initMap() {
+            // Tạo một đối tượng LatLng có latitude và longitude
+            var myLatLng = {lat: 16.0598, lng: 108.2245};
+            
+            // Tạo một đối tượng bản đồ và đặt tùy chọn
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 17,
+                center: myLatLng
+            });
+            
+            // Tạo một đánh dấu trên bản đồ
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: '38 Yên Bái, Hải Châu 1, Hải Châu, Đà Nẵng 550000, Việt Nam'
+            });
+        }
+    </script>
+    <!-- Bao gồm thư viện Google Maps JavaScript API -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+</body>
+</html>

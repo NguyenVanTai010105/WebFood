@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="icon" href="assets/LogoMinHao.png" type="assents/x-icon">
+    <link rel="stylesheet" href="stylefood.css">
+    <title>Bò hầm khoai tây</title>
+</head>
+<body>
+    <div id="header">
+        <a href="index.html" class="logo">
+            <img src="assets/LogoMinHao.png" alt="" style="width: 200px; height:80px;">
+        </a>
+        <div class="search-container">
+            <input type="text" id="searchInput1" oninput="showSuggestions()" placeholder="Search...">
+            <div id="clearButton1" class="clear-button1">&#10006;</div>
+            <div id="suggestions1" class="suggestions1"></div>
+          </div>
+        <div id="menu">
+            <div class="item">
+                <a href="index.html">TRANG CHỦ</a>
+            </div>
+           
+            <div class="item" >
+                <a href="congthuc.html" class="abc">CÔNG THỨC</a>
+            </div>
+            <div class="item">
+                <a href="https://thanhnien.vn/nau-an.html">BLOG</a>
+            </div>
+            <div class="item">
+                <a href="contact.html">LIÊN HỆ</a>
+            </div>
+            <div class="item">
+                <a href="About.html" >GIỚI THIỆU</a>
+            </div>
+        </div>
+        
+        <div id="actions">
+            <button class="btnLogin-popup">
+                <i class="fa-regular fa-user"></i>
+                <div style="margin: 20px; display: flex; align-items: center; justify-content: center;">
+                   
+                    <div class="text">Đăng nhập</div>
+                </div>
+                    
+                </button>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <div class="wrapper-login ">
+        <span class="icon-close">
+            <i class="fa-solid fa-x"></i>
+        </span>
+
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email"  required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remeber me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <P>Bạn chưa có tài khoản ?
+                        <a href="#" class="register-link">Register</a>
+                    </P>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">I agree to the terms & conditions</label>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Bạn đã có tài khoản ?
+                        <a href="#" class="login-link">Login</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="banner-with-title">
+        <img src="assets/bannertitle.png" alt="Banner Image" style="width: 100%;">
+        <div class="banner-title">
+            <h2>BÒ HẦM KHOAI TÂY </h2>
+        </div>
+    </div>
+    <div id="content">
+       
+        <div class="content-wrapper">
+            <div class="section">
+                <div class="image-container">
+                    <img src="https://yummyday.vn/uploads/images/bo-ham-tieu-xanh.jpg" alt="Bò hầm khoai tây">
+                    <figure style="background-color: #F1EDED;"><b>Thịt bò hầm khoai tây</b></figure>
+                </div>
+                <h2>1. Nguyên liệu cần chuẩn bị cho món thịt bò hầm khoai tây</h2>
+                <div style="color: black;">
+                    <li>Thịt bò: 600g</li>
+                    <li>Khoai tây: 3 củ vừa</li>
+                    <li>Cà rốt: 1 củ</li>
+                    <li>Cà chua: 3 quả</li>
+                    <li>Một ít hành lá,rau mùi</li>
+                    <li>Gia vị khác: Ngũ vị hương, hạt nêm, muối ăn, dầu ăn</li>
+                </div> 
+            </div>
+            <div class="section">
+                <h2>2. Cách làm thịt bò hầm khoai tây ngon ngất ngây</h2>
+                
+                <div style="color: black;">
+                    <h4>Bước  1: sơ chế nguyên liệu:</h4>
+                    <li>Thịt bò mua về bạn rửa sạch, thái thành miếng vuông. Sau đó bạn ướp cùng gia vị bao gồm: 2 muỗng hạt nêm, nửa gói ngũ vị hương, nửa muỗng cà phê xay. Thời gian bạn ướp khoảng 10 phút để bò ngấm đều gia vị.</li>
+                    <li>Khoai tây bạn sẽ gọt vỏ, cắt thành miếng vuông vừa ăn. Bạn ngâm khoai tây trong nước muối pha loãng để hết nhựa khoai tây. Sau đó vớt ra rồi để khô ráo nước.</li>
+                    
+                    <li>Cà chua bạn rửa sạch, bổ thành múi cau. Cà rốt thì gọt vỏ, rửa sạch tỉa múi hoa và cắt thành khúc nhỏ cho vừa.</li>
+                    <li>Rau ngò gai bạn rửa sạch, cắt thành từng khúc ngắn. Hành lá đem nhặt bỏ lá hư và rửa sạch, phần đầu trắng bạn cắt riêng ra đập dập, phần thân cắt khúc nhỏ.</li>
+                    <li>Gia vị khác: Một ít hành khô,tỏi,gừng,rau mùi,dầu hào,hạt nêm,bột năng</li>
+                </div>
+                
+
+                <div class="image-container">
+                    <img src="https://yummyday.vn/uploads/images/cach-nau-bo-ham.jpg" alt="">
+                    <figure style="background-color: #F1EDED;"><b>Thái thịt bò</b></figure>
+                </div><br>
+                
+                
+                </div><br>
+                
+                <h4>Bước 2: Các bước tiến hành:</h4>
+                <div class="image-container">
+                    <img src="assets/bo-ham-khoai-tay22.jpg" alt="">
+                    <figure style="background-color: #F1EDED;">Thịt bò hầm khoai tây cho bữa sáng</figure>
+                </div><br>
+                <p><li>Cho nồi lên bếp cùng với chút dầu ăn đun nóng. Trút phần thịt bò mà bạn đã ướp vào xào cho săn lại. Cho thịt vào nồi áp suất cùng với một lượng nước vừa đủ để tiến hành hầm.</li>
+                </p>
+                <p><li>Sử dụng tiếp chảo rồi cho dầu ăn đun nóng để xào đầu hành, cà chua. Cho tiếp khoai tây và cà rốt vào xào cùng. Nêm nếm lại gia vị cho thêm để vừa.</li></p>
+                <p><li>Bạn xào thêm một chút tới khi nào cà chua, cà rốt đã hơi chín tái rồi thì bạn sẽ cho tất cả chúng vào trong nồi để hầm cùng với thịt bò nhé. Chờ khi tất cả chín đều là bạn có thể tắt bếp được rồi.</li></p>
+                <p><li>Múc tất cả thành phẩm món bò hầm ra đĩa sâu lòng hoặc bát tô, cho hành lá và rau mùi lên để trang trí.</li></p>
+                
+                <h3>Xem chi tiết <a href="https://www.youtube.com/watch?v=zxWcB5vQIgY" style="text-decoration: underline;">tại đây</a></h3>
+                <div class="VIDEO" style="display: flex;
+                align-items: center;justify-content: center; margin-top: 30px;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zxWcB5vQIgY?si=pFR5rsWAcNs7Rduu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+                
+                
+        </div><br>
+
+            
+                
+                
+                
+                </div> 
+
+                
+            
+            
+
+</body>
+<div id="footer">
+    <div class="box1">
+        <div class="logo">
+            <img src="assets/LogoMinHao.png" alt="" style="width: 200px; height: auto;">
+        </div>
+    </div>
+    <div class="box">
+        <h3>NỘI DUNG</h3>
+        <ul class="quick-menu">
+            <div class="item">
+                <a href="index.html">Trang chủ</a>
+            </div>
+            <div class="item">
+                <a href="congthuc.html">Món ăn</a>
+            </div>
+            <div class="item">
+                <a href="https://thanhnien.vn/nau-an.html">Blog</a>
+            </div>
+            <div class="item">
+                <a href="">Liên hệ</a>
+            </div>
+        </ul>
+    </div>
+    <div class="box">
+        <h3>LIÊN HỆ</h3>
+        <div class="address">
+            <img src="./assets/location.png" class="icon">
+            <span>38 Yen Bai, VNPT Da Nang Building, Hai Chau, Danang, Vietnam</span>
+        </div>
+        <div class="telephone">
+            <img src="./assets/telephone.png" class="icon2">
+            <span>+84 941162396</span>
+        </div>
+        <div class="gmail">
+            <img src="./assets/email.png" class="icon3">
+            <span>arigatocookingcompany@gmail.com</span>
+        </div>
+    </div>
+</div>
+<script src="congthuc.js"></script>
+
+</html>

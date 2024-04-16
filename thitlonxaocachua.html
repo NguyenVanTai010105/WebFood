@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="assets/LogoMinHao.png" type="assents/x-icon">
+        <link rel="stylesheet" href="stylefood.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <title>THỊT HEO XÀO CÀ CHUA</title>
+</head>
+
+<body>
+    <div id="header">
+        <a href="index.html" class="logo">
+            <img src="assets/LogoMinHao.png" alt="" style="width: 200px; height:80px;">
+        </a>
+        <div class="search-container">
+            <input type="text" id="searchInput1" oninput="showSuggestions()" placeholder="Search...">
+            <div id="clearButton1" class="clear-button1">&#10006;</div>
+            <div id="suggestions1" class="suggestions1"></div>
+          </div>
+        <div id="menu">
+            <div class="item">
+                <a href="index.html">TRANG CHỦ</a>
+            </div>
+            <div class="item">
+                <a href="congthuc.html" class="abc">CÔNG THỨC</a>
+            </div>
+            <div class="item">
+                <a href="https://thanhnien.vn/nau-an.html">BLOG</a>
+            </div>
+            <div class="item">
+                <a href="contact.html">LIÊN HỆ</a>
+            </div>
+            <div class="item">
+                <a href="About.html" >GIỚI THIỆU</a>
+            </div>
+        </div>
+        
+        <div id="actions">
+            <button class="btnLogin-popup">
+                <i class="fa-regular fa-user"></i>
+                <div style="margin: 20px; display: flex; align-items: center; justify-content: center;">
+                   
+                    <div class="text">Đăng nhập</div>
+                </div>
+                    
+                </button>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <div class="wrapper-login ">
+        <span class="icon-close">
+            <i class="fa-solid fa-x"></i>
+        </span>
+
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email"  required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remeber me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <P>Bạn chưa có tài khoản ?
+                        <a href="#" class="register-link">Register</a>
+                    </P>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">I agree to the terms & conditions</label>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Bạn đã có tài khoản ?
+                        <a href="#" class="login-link">Login</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="banner-with-title">
+        <img src="assets/bannertitle.png" alt="Banner Image" >
+        <div class="banner-title">
+            <h2>THỊT HEO XÀO CÀ CHUA </h2>
+        </div>
+    </div>
+    </div>
+    <div id="content">
+        <div class="content-wrapper">
+            <div class="section">
+                <h1>1. Nguyên liệu cần chuẩn bị làm món thịt heo xào cà chua</h1>
+                <div>Thịt heo: 300g</div>
+                <div>Cà chua: 4 quả</div>
+                <div>Hành tím</div>
+                <div>Hành lá và rau mùi</div>
+                <div>Gia vị: nước tương, nước mắm, bột ngọt, dầu hào, hạt nêm, dầu ăn</div><br>
+            <div class="image-container">
+                <img src="https://yummyday.vn/uploads/images/thit-lon-xao-ca-chua-2.jpg" alt=""  >
+            </div>
+            </div><br>
+
+            <div class="section">
+                <h1>2. Cách làm món thịt heo xào cà chua</h1>
+                <h2>Bước 1: Sơ chế nguyên liệu</h2>
+                Thịt heo sau khi mua ở chợ về, các bạn đem đi rửa cho thật sạch chung với nước muối pha loãng, rồi sau
+                đó các bạn đem đi thái thành từng miếng sao cho vừa ăn. Đối với nguyên liệu thịt heo thì các bạn cũng có
+                thể sử dụng thịt nạc hoặc là thịt ba chỉ để chế biến cũng rất là ngon.
+                Cà chua các bạn đem rửa cho thật sạch rồi sau đó thái thành từng múi cau. Hành lá và rau ngò các bạn đem
+                đi cắt bỏ phần gốc và rửa sạch với nước rồi sau đó thái nhỏ, hành tím đem đi bóc bỏ phần vỏ rồi sau đó
+                băm cho nhuyễn.
+                <h2>Bước 2: Tiến hành ướp thịt</h2>
+                Thịt heo sau khi đã được thái thành từng miếng vừa ăn thì các bạn cho thịt ra cái tô lớn rồi ướp chung
+                với ⅓ muỗng hạt nêm, ⅓ muỗng bột ngọt, ½ muỗng nước mắm, ½ muỗng dầu hào, rồi sau đó trộn cho thật đều
+                gia vị và đem đi ướp thịt trong khoảng từ 10 cho đến 15 phút để cho thịt được thấm đều gia vị hơn.
+                <h2>Bước 3: Bắt đầu nấu món thịt heo xào cà chua</h2>
+                <p>Đầu tiên, các bạn cho một cái chảo lên trên bếp, chờ cho bếp nóng thì cho vào 2 muỗng dầu ăn, bật bếp
+                    lên và bắt đầu làm nóng dầu, chờ cho dầu sôi thì tiếp theo, các bạn cho một nửa phần hành tím đã
+                    được
+                    băm sẵn vào và phi lên cho vàng thơm.</p><br>
+                <p>Tiếp theo, các bạn cho thịt đã được ướp sẵn vào và bắt đầu xào cho phần thịt được chín đều, rồi sau
+                    khi thịt chín thì các bạn cho thịt ra ngoài tô và để riêng.</p><br>
+                <div class="image-container">
+                    <img src="https://yummyday.vn/uploads/images/thit-lon-xao-ca-chua-3.jpg" alt=""  >
+                </div><br>
+                    <p>Sử dụng tiếp chiếc chảo vừa mới xào thịt, các bạn cho thêm 1 muỗng dầu ăn vào đun sôi cùng với phần
+                    hành tím đã được băm nhuyễn còn lại vào và phi lên cho thơm, sau đó, cho phần cà chua đã được thái sẵn
+                    vào xào chung. Hạ lửa nhỏ lại và nêm nếm thêm 1 ít hạt nêm vào đảo đều cho đến khi phần cà chua được
+                    chín mềm.</p><br>
+                <p>Trong khi đun, các bạn lưu ý nên cho thêm một vài muỗng nước vào để cho cà chua nhanh nhừ, khi nước
+                    sôi
+                    lại lần nữa thì các bạn cho phần thịt đã được xào chín vào và tiến hành đảo đều rồi rim chung trong
+                    khoảng 5 phút.
+                    Sau đó, các bạn nêm nếm gia vị lại một lần nữa cho phù hợp với khẩu vị thì tiến hành tắt bếp.</p>
+            </div>
+
+            <div class="section">
+                <h1>3. Thành phẩm món thịt heo xào cà chua</h1>
+                <p>- Món thịt heo xào cà chua sau khi chế biến có màu sắc bắt mắt, trang trí đẹp, đầy đủ màu sắc, đỏ của
+                    càchua,
+                    xanh của hành ngò</p>
+                <p>- Món ăn mang hương vị đậm đà, không quá mặn</p>
+                <p>- Cà chua và thịt phải đảm bảo được chín tới, không bị nhừ, cà chua không bị nát</p>
+                <p>- Món ăn ngon hơn khi ăn kèm với cơm nóng</p><br>
+                <div class="image-container">
+                    <img src="https://yummyday.vn/uploads/images/thit-lon-xao-ca-chua-4.jpg" alt=""  >
+                </div><br>
+            </div>
+            <div class="section">
+                <h1>4. Một vài lưu ý về cách chế biến món thịt heo xào cà chua</h1>
+                <p>- Để cho món ăn được thơm ngon hơn thì việc đầu tiên là các bạn cần phải lựa chọn nguyên liệu thật
+                    tươi và ngon, nên chọn thịt heo nạc hoặc thịt ba chỉ sẽ ngon hơn, nên chọn những miếng thịt còn
+                    tươi, không xỉn, bạc mày hay bốc mùi hôi thối. Chính vì vậy, mà các bạn nên đi chợ sớm để có thể
+                    chọn được những miếng thịt tươi nhé.</p>
+                <p>- Cần chế biến nguyên liệu thật kỹ để đảm bảo chất lượng món ăn được thơm ngon trọn vị.</p><br>
+                <h3>Xem chi tiết <a href="https://www.youtube.com/watch?v=PUbQXKC-MBI" style="text-decoration: underline;">tại đây</a></h3>
+                <div class="VIDEO" style="display: flex;
+                align-items: center;justify-content: center; margin-top: 30px;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PUbQXKC-MBI?si=auVSy7rehq9JmZQ2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            </div>
+        </div>
+    </div>
+   
+   
+</body>
+<div id="footer">
+    <div class="box1">
+        <div class="logo">
+            <img src="assets/LogoMinHao.png" alt="" style="width: 200px; height: auto;">
+        </div>
+    </div>
+    <div class="box">
+        <h3>NỘI DUNG</h3>
+        <ul class="quick-menu">
+            <div class="item">
+                <a href="index.html">Trang chủ</a>
+            </div>
+            <div class="item">
+                <a href="congthuc.html">Món ăn</a>
+            </div>
+            <div class="item">
+                <a href="https://thanhnien.vn/nau-an.html">Blog</a>
+            </div>
+            <div class="item">
+                <a href="">Liên hệ</a>
+            </div>
+        </ul>
+    </div>
+    <div class="box">
+        <h3>LIÊN HỆ</h3>
+        <div class="address">
+            <img src="./assets/location.png" class="icon">
+            <span>38 Yen Bai, VNPT Da Nang Building, Hai Chau, Danang, Vietnam</span>
+        </div>
+        <div class="telephone">
+            <img src="./assets/telephone.png" class="icon2">
+            <span>+84 941162396</span>
+        </div>
+        <div class="gmail">
+            <img src="./assets/email.png" class="icon3">
+            <span>arigatocookingcompany@gmail.com</span>
+        </div>
+    </div>
+</div>
+<script src="congthuc.js"></script>
+
+</html>

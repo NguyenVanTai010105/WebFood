@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/LogoMinHao.png" type="assents/x-icon">
+    <link rel="stylesheet" href="stylefood.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>LÒNG HEO XÀO CHUA NGỌT</title>
+</head>
+<body>
+    <div id="header">
+        <a href="index.html" class="logo">
+            <img src="assets/LogoMinHao.png" alt="" style="width: 200px; height:80px;">
+        </a>
+        <div class="search-container">
+            <input type="text" id="searchInput1" oninput="showSuggestions()" placeholder="Search...">
+            <div id="clearButton1" class="clear-button1">&#10006;</div>
+            <div id="suggestions1" class="suggestions1"></div>
+          </div>
+        <div id="menu">
+            <div class="item">
+                <a href="index.html">TRANG CHỦ</a>
+            </div>
+            <div class="item">
+                <a href="congthuc.html" class="abc">CÔNG THỨC</a>
+            </div>
+            <div class="item">
+                <a href="https://thanhnien.vn/nau-an.html">BLOG</a>
+            </div>
+            <div class="item">
+                <a href="contact.html">LIÊN HỆ</a>
+            </div>
+            <div class="item">
+                <a href="About.html" >GIỚI THIỆU</a>
+            </div>
+        </div>
+        
+        <div id="actions">
+            <button class="btnLogin-popup">
+                <i class="fa-regular fa-user"></i>
+                <div style="margin: 20px; display: flex; align-items: center; justify-content: center;">
+                   
+                    <div class="text">Đăng nhập</div>
+                </div>
+                    
+                </button>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <div class="wrapper-login ">
+        <span class="icon-close">
+            <i class="fa-solid fa-x"></i>
+        </span>
+
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email"  required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remeber me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <P>Bạn chưa có tài khoản ?
+                        <a href="#" class="register-link">Register</a>
+                    </P>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">I agree to the terms & conditions</label>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Bạn đã có tài khoản ?
+                        <a href="#" class="login-link">Login</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="banner-with-title">
+        <img src="assets/bannertitle.png" alt="Banner Image" style="width: 1500px;">
+        <div class="banner-title">
+            <h2>LÒNG HEO XÀO CHUA NGỌT NGON TẠI NHÀ </h2>
+        </div>
+    </div>
+    <div id="content">
+        
+        <div class="content-wrapper">
+        
+            <div class="section">
+                <div class="image-container">
+                    <img src="https://yummyday.vn/uploads/images/long-heo-xao-chua-ngot-1.jpg" alt="Lòng heo xào chua ngọt">
+                    <figure style="background-color: #F1EDED;width: 100%;">Món lòng heo xào chua ngọt thơm</figure>
+                </div>
+                
+                <h2>1.Nguyên liệu cần chuẩn bị cho món lòng heo xào chua ngọt</h2>
+                <div style="color: black;">
+                    <li>Dứa: 1/4 quả</li>
+                    <li>Cà chua: 1 quả  </li>
+                    <li>Chanh hoặc dấm</li>
+                    <li>Lòng heo non: 300 gram</li>
+                    <li>Tiêu, ớt, dầu ăn, đường</li>
+                    <li>Hành lá, rau răm, tỏi, lạc rang</li>
+                   
+                </div>
+        
+        
+            </div>
+
+            <div class="section">
+                <h2>2. Cách làm lòng heo xào chua ngọt</h2>
+                <h3>Bước 1: Sơ chế nguyên liệu</h3>
+                <div class="image-container">
+                    <img src="assets/longheo.jpg" alt="">
+                    <figure style="background-color: #F1EDED;width: 100%;">Sơ chế lòng heo thật sạch nhé các bạn</figure>
+                </div><br>
+                <li> Rửa lòng heo thật sạch với nước muối pha loãng hoặc nước cốt chanh.</li>
+
+                    <p><li>Đun nước cho sôi, sau đó cho lòng heo đã được rửa sạch vào và chần sơ qua. Thái thành từng miếng vừa ăn.</li></p>
+                    
+                    <li>Cắt dứa thành từng miếng vừa ăn.</li>
+                    <div class="image-container">
+                        <img src="assets/duacatlat.png" alt="">
+                        <figure style="background-color: #F1EDED;width: 100%;">Dứa cắt miếng vừa ăn</figure>
+                    </div><br>
+                <p><li>  Thái nhỏ cà chua.</li></p>
+                <div class="image-container">
+                    <img src="assets/cachuathatlat.jpg" alt="">
+                    <figure style="background-color: #F1EDED;width: 100%;">Thái nhỏ cà chua</figure>
+                </div><br>
+                    <h2>2.Tiến hành xào lòng heo</h2>
+                    
+                <li><b>Cho 2 muỗng dầu ăn vào chảo, đun nóng.</li>
+                <li>Phi thơm tỏi đã băm, sau đó trút cà chua đã thái vào xào chung cho đến khi cà chua mềm.</li>
+                <li>Tiếp theo, cho dứa vào và xào cho chín mềm.</li>
+                <li>Nêm nếm với ớt, nước mắm và đường.</li>
+                <li>Trút phần lòng đã được thái miếng vào trong chảo, đảo đều và nêm nếm lại gia vị sao cho phù hợp với khẩu vị.</li>
+                <li>Cuối cùng, xào chua ngọt ra ngoài đĩa, rắc tiêu lên và thêm lạc rang và rau răm lên trên. Thưởng thức lúc nóng với cơm.</li>
+                </div><br>
+                <h3>Xem chi tiết <a href="https://www.youtube.com/watch?v=WW3rwGto8go" style="text-decoration: underline;">tại đây</a></h3>
+                <div class="VIDEO" style="display: flex;
+                align-items: center;justify-content: center; margin-top: 30px;margin-bottom: 30px;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WW3rwGto8go?si=ipzMtRm1f20mbRlr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            
+                
+                
+        </div>
+      
+</body>
+<div id="footer">
+    <div class="box1">
+        <div class="logo">
+            <img src="assets/LogoMinHao.png" alt="" style="width: 200px; height: auto;">
+        </div>
+    </div>
+    <div class="box">
+        <h3>NỘI DUNG</h3>
+        <ul class="quick-menu">
+            <div class="item">
+                <a href="index.html">Trang chủ</a>
+            </div>
+            <div class="item">
+                <a href="congthuc.html">Món ăn</a>
+            </div>
+            <div class="item">
+                <a href="https://thanhnien.vn/nau-an.html">Blog</a>
+            </div>
+            <div class="item">
+                <a href="contact.html">Liên hệ</a>
+            </div>
+        </ul>
+    </div>
+    <div class="box">
+        <h3>LIÊN HỆ</h3>
+        <div class="address">
+            <img src="./assets/location.png" class="icon">
+            <span>38 Yen Bai, VNPT Da Nang Building, Hai Chau, Danang, Vietnam</span>
+        </div>
+        <div class="telephone">
+            <img src="./assets/telephone.png" class="icon2">
+            <span>+84 941162396</span>
+        </div>
+        <div class="gmail">
+            <img src="./assets/email.png" class="icon3">
+            <span>arigatocookingcompany@gmail.com</span>
+        </div>
+    </div>
+</div>
+<script src="congthuc.js"></script>
+</html>

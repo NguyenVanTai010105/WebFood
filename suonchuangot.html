@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="assets/LogoMinHao.png" type="assents/x-icon">
+    <link rel="stylesheet" href="stylefood.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Sườn chua ngọt</title>
+</head>
+<body>
+    <div id="header">
+        <a href="index.html" class="logo">
+            <img src="assets/LogoMinHao.png" alt="" style="width: 200px; height:80px;">
+        </a>
+        <div class="search-container">
+            <input type="text" id="searchInput1" oninput="showSuggestions()" placeholder="Search...">
+            <div id="clearButton1" class="clear-button1">&#10006;</div>
+            <div id="suggestions1" class="suggestions1"></div>
+          </div>
+        <div id="menu">
+            <div class="item">
+                <a href="index.html">TRANG CHỦ</a>
+            </div>
+            <div class="item">
+                <a href="congthuc.html" class="abc">CÔNG THỨC</a>
+            </div>
+            <div class="item">
+                <a href="https://thanhnien.vn/nau-an.html">BLOG</a>
+            </div>
+            <div class="item">
+                <a href="contact.html">LIÊN HỆ</a>
+            </div>
+            <div class="item">
+                <a href="About.html" >GIỚI THIỆU</a>
+            </div>
+        </div>
+        
+        <div id="actions">
+            <button class="btnLogin-popup">
+                <i class="fa-regular fa-user"></i>
+                <div style="margin: 20px; display: flex; align-items: center; justify-content: center;">
+                   
+                    <div class="text">Đăng nhập</div>
+                </div>
+                    
+                </button>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <div class="wrapper-login ">
+        <span class="icon-close">
+            <i class="fa-solid fa-x"></i>
+        </span>
+
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email"  required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remeber me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <P>Bạn chưa có tài khoản ?
+                        <a href="#" class="register-link">Register</a>
+                    </P>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">I agree to the terms & conditions</label>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Bạn đã có tài khoản ?
+                        <a href="#" class="login-link">Login</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="banner-with-title">
+        <img src="assets/bannertitle.png" alt="Banner Image" style="width: 1500px;">
+        <div class="banner-title">
+            <h1>SƯỜN CHUA NGỌT NGON </h1>
+        </div>
+    </div>
+    <div id="content">
+        
+        <div class="content-wrapper">
+        
+            <div class="section">
+                <div class="image-container">
+                    <img src="https://yummyday.vn/uploads/images/cach-lam-suon-kho-chua-ngot.jpg" alt="Sườn chua ngọt">
+                    <figure style="background-color: #F1EDED;width: 100%;">Sườn chua ngọt</figure>
+                </div>
+                
+                <h1>1. Nguyên liệu cần chuẩn bị cho món sườn chua ngọt</h1>
+                <div style="color: black;">
+                    <li>Sườn non: 0,5kg</li>
+                    <li>Hành khô: 3 củ</li>
+                    <li>Tỏi: nửa củ</li>
+                    <li>Ớt: 2 quả</li>
+                    <li>Một ít hành lá</li>
+                    <li>Gia vị khác: hạt nêm, mắm, muối, đường, hạt tiêu, giấm táo (hoặc nước cốt chanh), và dầu ăn.</li>
+                </div>
+        
+        
+            </div>
+            <div class="section">
+                <h1>2. Cách kho sườn chua ngọt ngon</h1>
+                <h2>Bước 1: Sơ chế nguyên liệu</h2>
+                <div class="image-container">
+                    <img src="https://yummyday.vn/uploads/images/suon-non-kho-chua-ngot.jpg" alt="">
+                </div><br>
+                <li> <i>Sườn non</i>: Khi mua về rửa thật sạch, chặt thành các khúc khoảng 4cm. Sau đó bạn cho sườn vào nồi, đổ nước xấp xỉ phần sườn, 
+                    thêm một ít muối trắng vào để khử mùi, đun đến khi sôi sẽ xuất hiện những bọt bẩn và vụn thịt nổi lên trên. Đổ sườn ra rổ rồi xả nước trực tiếp vào sườn để loại bỏ hết bọt bẩn cùng với những vụn thịt.</li>
+
+                <p><li> <i>Tỏi, hành khô</i>: Không chọn những củ đã mọc mầm, trong trường hợp chỉ còn những củ đó để dùng thì bạn loại bỏ mầm, 
+                    bỏ vỏ rồi đập dập sau đó băm nhỏ hoặc thái lát.</li></p>
+                    Ớt: Rửa sạch, bỏ hạt, thái lát
+                    <p><li><i>Hành lá</i>: Bỏ rễ, bỏ các lá úa, thái nhỏ.</li></p>
+                <div class="image-container">
+                    <img src="https://yummyday.vn/uploads/images/cach-kho-suon-non-chua-ngot.jpg" alt="">
+                    <figure style="background-color: #F1EDED;width: 100%;">Sơ chế sườn non sạch sẽ trước khi chế biến</figure>
+                </div><br>
+                
+                
+                </div><br>
+                <h2>Bước 2: Tiến hành pha nước sốt ướp thần thánh</h2>
+                <div class="image-container">
+                    <img src="https://yummyday.vn/uploads/images/suon-kho-chua-ngot-1.jpg" alt="">
+                    <figure style="background-color: #F1EDED;width: 100%;">Nước sốt ướp thịt thần thánh</figure>
+                </div><br>
+                <p><li>Ướp sườn: Dùng hỗn hợp bao gồm ½ thìa đường + ½ thìa hạt nêm + ½ thìa hạt tiêu trộn đều với sườn. Dùng đũa hoặc găng tay để đảo cho đều, ướp khoảng 30 phút giúp cho sườn ngấm gia vị.</li>
+                <li>Pha nước kho: Trong thời gian chờ sườn ngấm gia vị, bạn pha nước để kho sườn. Pha theo tỷ lệ: 2 thìa giấm táo + 1 thìa đường + ⅓ thìa muối + 3 thìa nước lọc và trộn đều. Có thể thay thế giấm táo bằng nước cốt chanh hoặc nước cốt me đều có thể tạo độ chua ngon.</li>
+                </p>
+                <h2>Bước 3: Cách kho sườn non chua ngọt</h2>
+                <p><li>Chuẩn bị một chiếc chảo, cho lên bếp đun cho hơi nóng rồi đổ dầu ăn vào tráng đều mặt chảo.</li></p>
+                <p><li>Dầu sôi, cho hành tỏi băm vào phi thơm, khi hành tỏi chuyển sang màu hơi vàng thì cho sườn heo đã tẩm ướp vào đảo với lửa lớn. Đảo nhanh tay đến khi sườn săn lại, cháy cạnh và có màu hơi vàng.</li></p>
+                <p><li>Cho nước kho vừa pha vào, cùng với đó là vài lát ớt (tuy theo khả năng ăn cay của gia đình) để tạo vị. </li></p>
+                <p><li>Tiếp tục đảo đều tay cho đến khi nước sôi thì vặn lửa nhỏ, đun thêm khoảng 5 - 10 để nước kho ngấm vào sườn khiến cho sườn mềm và dậy mùi thơm thì tắt bếp.</li></p>
+                <p><li>Cho sườn kho chua ngọt ra đĩa, rắc lên trên chút hành lá, ớt lát hoặc thêm ít vừng cho đẹp mắt.</li></p>
+                <h2>Bước 4: Công đoạn trình bày và thưởng thức sườn chua ngọt ngon</h2>
+                <p><li>Các loại rau, dưa leo, bắp chuối,… các bạn trình bày ra đĩa rồi đặt xung quanh bàn ăn.</li></p><br>
+                <p><u><b>*Lưu ý :</b></u> Nên thưởng thức khi món ăn còn đang nóng và ăn với cơm trắng sẽ giúp tăng phần ngon miệng hơn và sẽ tuyệt vời hơn khi cả gia đình có mặt đông đủ cùng nhau thưởng thức món <b>sườn kho chua ngon ngọt</b> này  .</p>
+                <br>
+                <div class="image-container">
+                    <img src="https://yummyday.vn/uploads/images/kho-suon-chua-ngot.jpg" alt="">
+                    <figure style="background-color: #F1EDED;width: 50%; margin-left: 50vh;">Thưởng thức cực phẩm <b>sườn kho chua ngọt</b></figure>
+                </div>
+                <br>
+
+                <p>Sử dụng tiếp chiếc chảo vừa mới xào thịt, các bạn cho thêm 1 muỗng dầu ăn vào đun sôi cùng với phần
+                    hành tím đã được băm nhuyễn còn lại vào và phi lên cho thơm, sau đó, cho phần cà chua đã được thái
+                    sẵn
+                    vào xào chung. Hạ lửa nhỏ lại và nêm nếm thêm 1 ít hạt nêm vào đảo đều cho đến khi phần cà chua được
+                    chín mềm.</p><br>
+                <p>Trong khi đun, các bạn lưu ý nên cho thêm một vài muỗng nước vào để cho cà chua nhanh nhừ, khi nước
+                    sôi
+                    lại lần nữa thì các bạn cho phần thịt đã được xào chín vào và tiến hành đảo đều rồi rim chung trong
+                    khoảng 5 phút.
+                    Sau đó, các bạn nêm nếm gia vị lại một lần nữa cho phù hợp với khẩu vị thì tiến hành tắt bếp.</p>
+            
+
+            <div class="section">
+                <h1>3. Một vài điều lưu ý khi nấu sườn kho chua ngon ngọt</h1>
+                <div class="image-container">
+                    <img src="https://yummyday.vn/uploads/images/cach-kho-suon-chua-ngot.jpg" alt="">
+                    <figure style="background-color: #f1eded;width: 50%; margin-left: 50vh;">Lưu ý khi chế biến <b>sườn kho chua ngọt</b></figure>
+                </div><br>
+                <p><li>Để làm <b>sườn kho chua ngọt</b> ngon, trước tiên bạn cần biết cách lựa chọn những dải sườn ngon. Nên chọn những dải sườn có độ tươi, dấu hiệu nhận biết rất dễ, hãy chú ý đến màu sắc của nó: hồng nhạt và không mùi lạ. Dùng tay nhấn vào phần thịt, nếu có sự đàn hồi thì sườn vẫn còn tươi.</li></p>
+                <p><li>Chọn sườn ít mỡ để khi kho không bị ngấy, ngoài ra sườn sụn kho chua ngọt cũng rất ngon.</li></p>
+                <p><li>Sườn heo khi mua về nên sơ chế bằng cách luộc qua 1 lần nước, vừa giúp khử bớt mùi vừa giúp món ăn khi chế biến trông sạch sẽ, gọn gàng.</li></p>
+                <p><li>Để món sườn kho chua ngọt đậm đà hương vị, sau khi món ăn đã được chế biến xong bạn hãy cho thêm một chút nước cốt chanh lên món ăn, đảm bảo vị chua ngọt sẽ rất kích thích vị giác.</li></p><br>
+                <div class="image-container">
+                    <img src="https://cdn.eva.vn/upload/3-2023/images/2023-09-07/suon-kho-khong-da-ngon-cho-them-qua-be-ti-dinh-duong-gap-3-4-lan-trung-ga-lai-duoc-mon-an-voi-com-si-17-1694094634-782-width780height520.jpeg" alt="">
+                    <figure style="background-color: #f1eded;width: 50%; margin-left: 50vh;">Có thể kho kèm với trứng cút để tăng thêm phần dinh dưỡng cho bữa ăn</b></figure>
+                </div><br>
+                <div style="margin:px;">
+                    <h1 style="text-decoration: underline;">Lưu ý cách bảo quản món ăn:</h1>
+                <p><li>Sườn heo khi mua về nếu không sử dụng ngay trong ngày thì bạn nên cho vào ngăn đá tủ lạnh, đến khi chế biến thì bỏ ra ngâm trong nước lạnh khoảng 10 phút, thịt sẽ nhanh rã đông.</li></p>
+                <p><li>Nếu món ăn chưa được ăn hết, hãy cho vào hộp đậy nắp hoặc dùng màng bọc thực phẩm để bảo quản chúng trong ngăn mát tủ lạnh. Lần sau khi bỏ ra ăn bạn để nguội bớt rồi đảo lại cho nóng hoặc cho vào nồi hấp.</li></p>
+                <p>Hãy lưu lại những bí quyết trên để có thể tạo ra những cực phẩm sườn kho chua ngọt cực ngon cho gia đình cùng thưởng thức nhé. Chúc các bạn có những bữa ăn thật vui vẻ bên gia đình, đừng quên chia sẻ công thức nấu ăn tới các chị em nội trợ để cùng vào bếp nấu món ngon mỗi ngày nhé!</p>
+                <p><i>Trên đây là một số thông tin về món <b>Sườn kho chua ngọt</b> ngon trọn vị, bắt mắt. Món ăn không chỉ đem
+                    lại cảm giác thơm ngon, ấm bụng mà còn chứa hàm lượng chất dinh dưỡng rất cao. Với công thức đơn
+                    giản và các nguyên liệu vô cùng dễ kiếm, các bạn có thể mua ở chợ hay siêu thị để có những nguyên
+                    liệu tươi ngon nhất. Còn gì bằng vào những ngày mưa và cùng quây quần bên gia đình để thưởng thức
+                    món lẩu gà chua chua của cà chua, cay của ớt, thơm béo của gà và ngọt của nấm, hòa quyện với gia vị
+                    đậm đà thì còn gì bằng. Chúc các bạn thành công.</i></p>
+                </div>
+            </div>
+        
+            <h3>Xem chi tiết <a href="https://www.youtube.com/watch?v=xn6NogjFrmA" style="text-decoration: underline;">tại đây</a></h3>
+            <div class="VIDEO" style="display: flex;
+            align-items: center;justify-content: center; margin-top: 30px;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xn6NogjFrmA?si=kdITLhJ3YrlsKbyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+            </div><br>
+            
+    </div>
+
+            
+                
+                
+  
+</body>
+<div id="footer">
+    <div class="box1">
+        <div class="logo">
+            <img src="assets/LogoMinHao.png" alt="" style="width: 200px; height: auto;">
+        </div>
+    </div>
+    <div class="box">
+        <h3>NỘI DUNG</h3>
+        <ul class="quick-menu">
+            <div class="item">
+                <a href="index.html">Trang chủ</a>
+            </div>
+            <div class="item">
+                <a href="congthuc.html">Món ăn</a>
+            </div>
+            <div class="item">
+                <a href="https://thanhnien.vn/nau-an.html">Blog</a>
+            </div>
+            <div class="item">
+                <a href="">Liên hệ</a>
+            </div>
+        </ul>
+    </div>
+    <div class="box">
+        <h3>LIÊN HỆ</h3>
+        <div class="address">
+            <img src="./assets/location.png" class="icon">
+            <span>38 Yen Bai, VNPT Da Nang Building, Hai Chau, Danang, Vietnam</span>
+        </div>
+        <div class="telephone">
+            <img src="./assets/telephone.png" class="icon2">
+            <span>+84 941162396</span>
+        </div>
+        <div class="gmail">
+            <img src="./assets/email.png" class="icon3">
+            <span>arigatocookingcompany@gmail.com</span>
+        </div>
+    </div>
+</div>
+<script src="congthuc.js"></script>
+</html>

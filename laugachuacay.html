@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/LogoMinHao.png" type="assents/x-icon">
+    <link rel="stylesheet" href="stylefood.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>LẨU GÀ CHUA CAY</title>
+</head>
+
+<body>
+    <div id="header">
+        <a href="index.html" class="logo">
+            <img src="assets/LogoMinHao.png" alt="" style="width: 200px; height:80px;">
+        </a>
+        <div class="search-container">
+            <input type="text" id="searchInput1" oninput="showSuggestions()" placeholder="Search...">
+            <div id="clearButton1" class="clear-button1">&#10006;</div>
+            <div id="suggestions1" class="suggestions1"></div>
+          </div>
+        <div id="menu">
+            <div class="item">
+                <a href="index.html">TRANG CHỦ</a>
+            </div>
+            <div class="item">
+                <a href="congthuc.html" class="abc">CÔNG THỨC</a>
+            </div>
+            <div class="item">
+                <a href="https://thanhnien.vn/nau-an.html">BLOG</a>
+            </div>
+            <div class="item">
+                <a href="contact.html">LIÊN HỆ</a>
+            </div>
+            <div class="item">
+                <a href="About.html" >GIỚI THIỆU</a>
+            </div>
+        </div>
+        
+        <div id="actions">
+            <button class="btnLogin-popup">
+                <i class="fa-regular fa-user"></i>
+                <div style="margin: 20px; display: flex; align-items: center; justify-content: center;">
+                   
+                    <div class="text">Đăng nhập</div>
+                </div>
+                    
+                </button>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <div class="wrapper-login ">
+        <span class="icon-close">
+            <i class="fa-solid fa-x"></i>
+        </span>
+
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email"  required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remeber me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <P>Bạn chưa có tài khoản ?
+                        <a href="#" class="register-link">Register</a>
+                    </P>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">I agree to the terms & conditions</label>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Bạn đã có tài khoản ?
+                        <a href="#" class="login-link">Login</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="banner-with-title">
+        <img src="assets/bannertitle.png" alt="Banner Image" >
+        <div class="banner-title">
+            <h2>LẨU GÀ CHUA CAY THƠM NGON </h2>
+        </div>
+    </div>
+    </div>
+    <div id="content">
+        <div class="content-wrapper">
+            <div class="section">
+                <div class="image-container">
+                    <img src="https://yummyday.vn/uploads/images/cach-nau-lau-ga-chua-cay.jpg" alt="">
+                    <div style="display: flex; align-items: center; justify-content: center;  background-color: #F1EDED;">Lẩu gà chua cay ngon đậm vị</div>
+                </div>
+                <h2>1. Nguyên liệu cần chuẩn bị cho món lẩu gà chua cay</h2>
+                <li>Gà ta: 1 con</li>
+                <li>Xương gà: 500 gram</li>
+                <li>Bún: 1kg</li>
+                <li>Khoai môn: 100 gram</li>
+                <li>Nấm rơm: 100 gram</li>
+                <li>Cà chua: 2 quả</li>
+                <li>Các loại rau ăn kèm với lẩu bao gồm: bắp chuối, rau cải xanh, rau muống (các bạn cũng có thể chuẩn bị thêm các loại rau ăn kèm với lẩu khác mà bạn thích)</li>
+                <li>Gia vị gồm có : Muối, hạt nêm, tiêu xay, đường, nước mắm, tương ớt</li><br>
+                <div class="image-container">
+                    <img src="https://yummyday.vn/uploads/images/lau-ga-chua-cay-3.jpg" alt="">
+                    <div style="display: flex; align-items: center; justify-content: center;  background-color: #F1EDED;">Lựa 1 con gà thật là tươi ngon</div>
+                </div>
+            </div><br>
+
+            <div class="section">
+                <h2>2. Cách làm lẩu gà chua cay lạ miệng</h2>
+                <h3>Bước 1: Sơ chế nguyên liệu</h3>
+                <div class="image-container">
+                    <img src="https://yummyday.vn/uploads/images/lau-ga-chua-cay-4.jpg" alt="">
+                    <div style="display: flex; align-items: center; justify-content: center;  background-color: #F1EDED;">Chặt gà thành miếng vừa ăn</div>
+                </div><br>
+                <li>- Thịt gà sau khi mua về các bạn đem đi rửa cho sạch, sau đó dùng muối chà sát xung quanh thân của con
+                    gà để có thể loại bỏ mùi hôi và lông măng. Sau đó đem gà ra chặt thành từng miếng vừa ăn.</li>
+                <p><li>- Xương gà các bạn đem chần qua với nước sôi sau đó cho vào nồi, đổ khoảng 1l nước vào và tiến hành
+                    ninh để lấy phần nước dùng</li></p>
+                
+                <div class="image-container">
+                    <img src="https://yummyday.vn/uploads/images/lau-ga-chua-cay-5.jpg" alt="">
+                    <div style="display: flex; align-items: center; justify-content: center;  background-color: #F1EDED;">Sả đập dập và xắt khúc nhỏ</div>
+
+                </div><br>
+                <li>Sả các bạn đem cắt bỏ lớp bẹ già bên ngoài sau đó rửa sạch, đập dập rồi cắt thành từng khúc nhỏ</li>
+                
+                <li>Các loại rau ăn kèm lẩu đem đi sơ chế rồi rửa sạch và để ráo nước</li>
+                <div class="image-container">
+                    <img src="https://yummyday.vn/uploads/images/lau-ga-chua-cay-6.jpg" alt="">
+                    <div style="display: flex; align-items: center; justify-content: center;  background-color: #F1EDED;">Cà chua cắt múi cau</div>
+
+                </div><br>
+                <p><li>Cà chua các bạn đem đi rửa sạch sau đó cắt thành từng múi cau</li></p>
+                <p><li>Khoai sọ đem gọt bỏ vỏ rồi rửa sạch sau đó bổ thành miếng vừa ăn</li></p>
+                <p><li>Nấm rơm các bạn đem đi ngâm với nước muối pha loãng rồi sau đó rửa sạch, để cho ráo nước</p>
+                <h2>Bước 2: Nấu nước dùng cho món lẩu gà chua cay</li></h2>
+                <div class="image-container">
+                    <img src="https://yummyday.vn/uploads/images/cach-lam-lau-ga-chua-cay.jpg" alt="">
+                    <div style="display: flex; align-items: center; justify-content: center;  background-color: #F1EDED;">Cách nấu nước dùng cho món lẩu gà chua cay</div>
+
+                </div><br>
+                <p><li>Bắc cái nồi lên trên bếp sau đó cho vào 2 muỗng dầu ăn và hành tỏi băm vào phi cho thơm lên. Tiếp
+                    theo đó các bạn cho cà chua vào, xào cho chín. Sau đó, cho thêm tương ớt + hành tây đã thái nhỏ cùng
+                    với gà vào xào cho đều lên cho đến khi phần thịt gà được săn lại thì các bạn tiếp tục cho nấm vào và
+                    xào tiếp. Tiến hành các bước nêm nếm gia vị: nửa muỗng nước mắm, 1 muỗng hạt nêm, ¼ muỗng muối, ¼
+                    muỗng bột ngọt, 2 muỗng tương ớt sao cho vừa ăn, phù hợp với khẩu vị là được. Cuối cùng cho phần
+                    nước ninh xương gà vào và đun cho sôi lên.</li></p>
+
+                <h2>Bước 3: Công đoạn trình bày và thưởng thức lẩu gà chua cay</h2>
+                <p><li>Các loại rau, rau muống, bắp chuối,… các bạn trình bày ra đĩa rồi đặt xung quanh bàn ăn.</li></p><br>
+                <p><li>Dọn bếp cùng với nồi lẩu ra bàn ăn, đổ phần nước dùng lẩu gà chua cay vào nồi ăn lẩu (sau đó, nêm
+                    nếm thử lại xem nước dùng, gia vị đã được vừa hay chưa). Bật bếp rồi đun cho sôi phần nước nước lẩu,
+                    sau đó cho gà + các loại rau ăn kèm với lẩu vào nồi rồi đợi sôi, chín thi tiến hành thưởng thức.</li></p>
+                <br>
+                <div class="image-container">
+                    <img src="https://yummyday.vn/uploads/images/lau-ga-chua-cay-4.jpg" alt="">
+                </div><br>
+
+                <p><li>Sử dụng tiếp chiếc chảo vừa mới xào thịt, các bạn cho thêm 1 muỗng dầu ăn vào đun sôi cùng với phần
+                    hành tím đã được băm nhuyễn còn lại vào và phi lên cho thơm, sau đó, cho phần cà chua đã được thái
+                    sẵn
+                    vào xào chung. Hạ lửa nhỏ lại và nêm nếm thêm 1 ít hạt nêm vào đảo đều cho đến khi phần cà chua được
+                    chín mềm.</li></p><br>
+                <p><li>Trong khi đun, các bạn lưu ý nên cho thêm một vài muỗng nước vào để cho cà chua nhanh nhừ, khi nước
+                    sôi
+                    lại lần nữa thì các bạn cho phần thịt đã được xào chín vào và tiến hành đảo đều rồi rim chung trong
+                    khoảng 5 phút.
+                    Sau đó, các bạn nêm nếm gia vị lại một lần nữa cho phù hợp với khẩu vị thì tiến hành tắt bếp.</li></p>
+            </div>
+
+            <div class="section">
+                <h1>3. Một vài điều lưu ý khi nấu lẩu gà chua cay:</h1>
+                <div class="image-container">
+                    <img src="https://yummyday.vn/uploads/images/lau-ga-chua-cay-7.jpg" alt="">
+                    <div style="display: flex; align-items: center; justify-content: center;  background-color: #F1EDED;">Một vài lưu ý</div>
+
+                </div><br>
+                <p><li>Để cho món lẩu gà chua cay được ngon hơn thì các bạn nên chuẩn bị thêm một vài chén muối tiêu chanh
+                    để có thể chấm thịt gà trong lúc ăn sẽ rất ngon.</li></p>
+                <p><li>Trong khi ninh phần xương gà để lấy nước dùng, thì khi nước sôi, sẽ xuất hiện bọt nổi lên trên, các
+                    bạn lưu ý dùng muôi để vớt bỏ đi hết phần bọt nổi đó đi để cho nước dùng được trong hơn và ngon hơn
+                    nhé.</li></p>
+                <p><li>Món lẩu gà chua cay này rất phù hợp đối với những ngày thời tiết âm u, se se lạnh, cùng tụ họp bạn
+                    bè, gia đình rồi được ngồi cùng nhau nhâm nhi, thưởng thức và trò chuyện thì còn gì bằng.</li></p>
+                <p><li>Các bạn có thể thưởng thức lẩu kèm với bún hoặc mì.</li></p><br>
+                <div class="image-container">
+                    <img src="https://yummyday.vn/uploads/images/cach-nau-lau-ga-chua-cay-ngon.jpg" alt="">
+                    <div style="display: flex; align-items: center; justify-content: center;  background-color: #F1EDED;">Thành phẩm món gà chua cay chuẩn vị</div>
+
+                </div><br>
+                <p>Trên đây là một số thông tin về món lẩu gà chua cay thơm ngon trọn vị, bắt mắt. Món ăn không chỉ đem
+                    lại cảm giác thơm ngon, ấm bụng mà còn chứa hàm lượng chất dinh dưỡng rất cao. Với công thức đơn
+                    giản và các nguyên liệu vô cùng dễ kiếm, các bạn có thể mua ở chợ hay siêu thị để có những nguyên
+                    liệu tươi ngon nhất. Còn gì bằng vào những ngày mưa và cùng quây quần bên gia đình để thưởng thức
+                    món lẩu gà chua chua của cà chua, cay của ớt, thơm béo của gà và ngọt của nấm, hòa quyện với gia vị
+                    đậm đà thì còn gì bằng. Chúc các bạn thành công.</p>
+            </div>
+            <h3>Xem chi tiết <a href="https://www.youtube.com/watch?v=lMMvbGB82M8" style="text-decoration: underline;">tại đây</a></h3>
+                <div class="VIDEO" style="display: flex;
+                align-items: center;justify-content: center; margin-top: 30px;margin-bottom: 30px;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lMMvbGB82M8?si=eqzYP2j8GX7r-kKS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+<div id="footer">
+    <div class="box1">
+        <div class="logo">
+            <img src="assets/LogoMinHao.png" alt="" style="width: 200px; height: auto;">
+        </div>
+    </div>
+    <div class="box">
+        <h3>NỘI DUNG</h3>
+        <ul class="quick-menu">
+            <div class="item">
+                <a href="index.html">Trang chủ</a>
+            </div>
+            <div class="item">
+                <a href="congthuc.html">Món ăn</a>
+            </div>
+            <div class="item">
+                <a href="https://thanhnien.vn/nau-an.html">Blog</a>
+            </div>
+            <div class="item">
+                <a href="">Liên hệ</a>
+            </div>
+        </ul>
+    </div>
+    <div class="box">
+        <h3>LIÊN HỆ</h3>
+        <div class="address">
+            <img src="./assets/location.png" class="icon">
+            <span>38 Yen Bai, VNPT Da Nang Building, Hai Chau, Danang, Vietnam</span>
+        </div>
+        <div class="telephone">
+            <img src="./assets/telephone.png" class="icon2">
+            <span>+84 941162396</span>
+        </div>
+        <div class="gmail">
+            <img src="./assets/email.png" class="icon3">
+            <span>arigatocookingcompany@gmail.com</span>
+        </div>
+    </div>
+</div>
+<script src="congthuc.js"></script>
+
+</html>

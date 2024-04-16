@@ -1,0 +1,743 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,200;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    
+}
+#menu .item .abc  {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+  
+    display: inline-block;
+    }
+
+#wrapper {
+    /* Kích thước màn hình là 1280 x 720 */
+    width: 100%;
+    height: 100vh;
+}
+#header {
+        background-color: rgb(248,248, 248);
+        color: #333;
+        padding: 10px;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        z-index: 9999;
+        /* Đảm bảo header hiển thị trên các phần khác của trang */
+    }
+
+.logo img{
+    vertical-align: middle; /* Căn giữa hình ảnh theo chiều dọc */
+}
+
+#menu {
+    display: inline-block; /* Hiển thị menu dưới dạng khối inline */
+    margin-left: 0; /* Di chuyển phần menu sang trái 10px */
+    display: flex;
+    justify-content: center; /* Căn các mục vào giữa theo chiều ngang */
+    
+}
+
+#menu .item  {
+   
+    
+    display: inline-block;
+}
+ #menu .item  ::after {
+    content: ''; /* Để phần gạch chân có nội dung */
+    position: absolute; /* Đặt vị trí tuyệt đối */
+    bottom: 0; /* Đặt gạch chân ở dưới cùng của item */
+    left: 0; /* Bắt đầu từ đầu item */
+    width: 0; /* Bắt đầu với chiều rộng là 0 */
+    height: 2px; /* Chiều cao của gạch chân */
+    background-color: red; /* Màu của gạch chân */
+    transition: width 0.3s  ease; /* Hiệu ứng khi gạch chân thay đổi chiều rộng */
+}
+
+#menu .item  :hover::after {
+    width: 90%; /* Chiều rộng của gạch chân khi hover */
+}
+#actions {
+    float: right; /* Đặt phần hành động ở bên phải */
+
+    border-radius: 40px;
+}
+
+#actions .item {
+    margin-left: 20px; /* Khoảng cách giữa các mục trong phần hành động */
+}
+
+/* Style cho các link */
+#menu .item a, #actions .item a {
+    text-decoration: none; /* Loại bỏ gạch chân từ các liên kết */
+    color: rgb(0, 0, 0); /* Màu chữ của các liên kết */
+    font-weight: bold; /* Đậm chữ của các liên kết */
+}
+
+#menu .item a {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    padding: 15px 25px;
+    display: inline-block;
+}
+
+#menu .item a:hover {
+  
+        color: rgb(221, 50, 50);
+     
+}
+#wrapper {
+    margin-bottom: 100px; /* Điều chỉnh giá trị margin-bottom tùy thích */
+}
+#actions .item {
+    display: inline-block; /* Đảm bảo các item hiển thị trên cùng một hàng */
+    margin-right: 10px; /* Khoảng cách giữa các item */
+    
+}
+
+#actions .item img {
+    width: 30px; /* Độ rộng của ảnh */
+    height: 30px; /* Độ cao của ảnh */
+    object-fit: cover; /* Đảm bảo ảnh không bị méo khi thay đổi kích thước */
+}
+
+#banner {
+    width: 100%;
+    background-image :url("assets/banner.png");
+    height: 463px;
+    
+    display: flex;
+    padding:0px 133px;
+    position:relative;
+}
+
+#banner .box-left ,#banner .box-right {
+    width: 50%;
+}
+
+#banner  .box-left h2 {
+    font-size:48px;
+    margin-top:75px;
+    color:#fff;
+}
+
+#banner .box-left p {
+    color:#D0D0D0;
+}
+
+#banner .box-left button {
+    width: 191px;
+    height: 40px;
+    margin-top:41px;
+    background:#1d1a1a;
+    border:none;
+    outline:none;
+    color:#fff;
+    font-weight: bold;
+    border-radius: 20px;
+    transition:0.4s;
+}
+
+#banner .box-left button:hover {
+    background:orange;
+}
+
+#banner .box-right {
+    padding-left:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner .box-right img {
+    margin:0px 10px;
+    animation :animation 3s infinite linear; 
+}
+
+
+#banner .box-right img:nth-child(1)
+{
+    animation-delay: 0.5s;
+}
+#banner .box-right img:nth-child(2)
+{
+    
+    animation-delay: 1s;
+}
+
+@keyframes animation {
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+
+.to-bottom {
+    position:absolute;
+    bottom:-40px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+
+
+
+#wp-products {
+    padding-top:116px;
+    padding-bottom: 78px;
+    padding-left:134px;
+    padding-right:134px;
+}
+
+#wp-products h2 {
+    text-align: center;
+    margin-bottom: 76px;
+    font-size:32px;
+    color:#626a67;
+}
+
+
+#list-products {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#list-products .item {
+    width: 290px;
+    height: 374px;
+    background:#362f2f;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+#list-products .item img {
+    display: block;
+    margin:0px auto;
+    margin-top:17px;
+}
+
+#list-products .item .stars {
+
+    display: flex;
+    margin:0px auto;
+    width: 50%;
+}
+
+#list-products .item .name {
+    text-align: center;
+    color:#fff;
+    font-weight: bold;
+    margin-top:21px;
+}
+
+#list-products .item .desc {
+    text-align: center;
+    color:#626a67;
+}
+
+#list-products .item .price {
+    text-align: center;
+    color:#f42424;
+    font-weight: bold;
+    margin-top:20px;
+}
+
+
+.list-page {
+    width: 50%;
+    margin:0px auto;
+}
+
+.list-page {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-page .item {
+    margin:0px 15px;
+    width: 37px;
+    height: 37px;
+    background:#362f2f;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-page .item a {
+    color:#fff;
+    text-decoration: none;
+}
+
+#sloganoff {
+    width: 100%;
+    display: flex;
+    height: 322px;
+}
+#sloganoff .box-left ,#sloganoff .box-right {
+    width: 50%;
+}
+#sloganoff .box-left {
+    background:#3e413e;
+    text-align: center;
+    min-height: 322px;
+}
+
+#sloganoff .box-left h1 {
+    padding-top:90px;
+}
+#sloganoff .box-left span:nth-child(1)
+{
+    color:#fff;
+    font-size:50px;
+}
+
+#sloganoff .box-left span:nth-child(2)
+{
+    color:orange;
+    font-size:50px;
+}
+
+#sloganoff .box-right {
+    background-image:url("assets/off.png");
+}
+
+
+#comment {
+    width: 1012px;
+    height: 478px;
+    margin:0px auto;
+    margin-top:184px;
+    margin-bottom: 50px;
+}
+
+#comment h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size:32px;
+    color:#626a67;
+}
+
+
+#comment-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 400px;
+    list-style: none;
+    overflow: hidden;
+}
+
+#list-comment {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    transition:0.5s;
+}
+
+#list-comment .item {
+    width: 100%;
+    height: 100%;
+    background:#362f2f;
+    border-radius: 20px;
+    padding-top:50px;
+}
+
+#list-comment .item .avatar {
+    text-align: center;
+    margin-top:13px;
+}
+
+#list-comment .item .stars {
+    display: flex;
+    margin:0px auto;
+    width: 50%;
+    margin-top:32px;
+    justify-content: center;
+    align-items: center;
+}
+
+#list-comment .item .name {
+    text-align: center;
+    font-weight: bold;
+    color:#fff;
+}
+
+#list-comment .item .text {
+    padding:20px 50px;
+    color:#fff;
+   
+}
+
+#footer {
+    width: 100%;
+    background: rgb(0, 0, 0, 0.79);
+    height: 322px;
+    margin-top: 200px;
+    padding: 0px 63px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Center vertically */
+}
+
+#footer .box {
+    width: 250px;
+    height: 200px;
+    color: #fff;
+}
+
+#footer .box .quick-menu {
+    margin-top: 40px;
+    width: 88px;
+    margin-left: -21px; /* Căn lề trái bằng với nội dung */
+}
+
+#footer .box .quick-menu .item {
+    margin: 22px;
+    width: 88px;
+}
+
+#footer .box .quick-menu,
+.item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer .box form input {
+    width: 294px;
+    height: 42px;
+    background: transparent;
+    padding-left: 20px;
+    color: #fff;
+    margin-top: 30px;
+}
+
+
+.address {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-top: 40px; /* Điều chỉnh khoảng cách giữa phần liên hệ và phần địa chỉ */
+}
+
+.address .icon {
+    margin-right: 5px; /* Điều chỉnh khoảng cách giữa icon và nội dung */
+    max-width: 20px; /* Điều chỉnh kích thước của icon nếu cần */
+    filter: invert(100%); /* Đảo màu của icon thành màu trắng */
+    margin-top: -30px;
+}
+.icon2, .icon3 {
+    margin-right: 5px; /* Điều chỉnh khoảng cách giữa icon và nội dung */
+    max-width: 20px; /* Điều chỉnh kích thước của icon nếu cần */
+    filter: invert(100%); /* Đảo màu của icon thành màu trắng */
+}
+.telephone, .gmail {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.telephone {
+    margin-bottom: 20px; /* Khoảng cách giữa telephone và các phần tử khác */
+    margin-top: 20px;
+}
+
+.item {
+    transition: transform 0.2s ease; /* Hiệu ứng chuyển động */
+    
+}
+
+.item:hover {
+    transform: scale(1.1); /* Phóng to món ăn khi rê chuột vào */
+}
+
+.search-container {
+    position: relative;
+    width: 300px;
+  }
+  .clear-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #999;
+}
+
+.clear-button:hover {
+    color: #666;
+}
+
+  
+  input[type=text] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .suggestions {
+    position: absolute;
+    width: 100%;
+    background-color: #f9f9f9;
+    z-index: 1;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    display: none;
+  }
+  
+  .suggestion {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .suggestion:hover {
+    background-color: #ddd;
+  }
+
+
+
+
+
+
+  .wrapper-login {
+    position: fixed; /* Đặt phần đăng nhập cố định trên màn hình */
+    top: 20%; /* Đặt phần đầu vào ở giữa theo chiều dọc */
+    left: 38%; /* Đặt phần đầu vào ở giữa theo chiều ngang */
+    transform: translate(-50%, -50%); /* Di chuyển phần đăng nhập ngược lại 50% kích thước của nó */
+    z-index: 9999; /* Đảm bảo phần đăng nhập hiển thị trên các phần khác của trang */
+    width: 400px;
+    height: 440px;
+    background: #fff;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease;
+}
+
+.wrapper-login.active-popup {
+    transform: scale(1);
+}
+
+.wrapper-login.active {
+    height: 520px;
+}
+
+.wrapper-login .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.wrapper-login.form-box.login {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper-login.active .form-box.login {
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.wrapper-login .form-box.register {
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wrapper-login.active .form-box.register {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper-login .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #162938;
+    font-size: 2em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.form-box h2 {
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom:  2px solid #162938 ;
+    margin: 30px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus ~ label ,
+.input-box input:valid ~ label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #162938;
+    line-height: 57px;
+
+}
+
+.remember-forgot{
+    font-size: .9em;
+    color: #162938;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.remember-forgot label input {
+    accent-color: #162938;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color: #162938;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500 ;
+}
+
+.login-register{
+    font-size: .9em;
+    color: #162938;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-register p a {
+    color: #162938;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-register p a:hover {
+    text-decoration: underline;
+}
+
+.btnLogin-popup {
+    border: 1px solid red;
+    border-radius: 40px;
+    color: #000000;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 39px;
+  background-color: white;
+    padding-left: 45px;
+    padding-right: 25px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 160px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btnLogin-popup:hover {
+    color: white;
+    background-color: red; /* Đổi màu nền của nút khi rê chuột vào */
+    cursor: pointer; /* Thay đổi con trỏ chuột khi rê vào nút */
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu đen với độ mờ là 50% */
+    z-index: 999; /* Đảm bảo overlay hiển thị phía trên phần đăng nhập */
+    display: none; /* Mặc định ẩn overlay */
+}
+
+
+body.lock-scroll {
+    overflow: hidden;
+  }

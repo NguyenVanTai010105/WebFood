@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search Bar with Suggestions</title>
+</head>
+<body>
+<style>
+    .search-container {
+    position: relative;
+    width: 300px;
+  }
+  .clear-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #999;
+}
+
+.clear-button:hover {
+    color: #666;
+}
+
+  
+  input[type=text] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .suggestions {
+    position: absolute;
+    width: 100%;
+    background-color: #f9f9f9;
+    z-index: 1;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    display: none;
+  }
+  
+  .suggestion {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .suggestion:hover {
+    background-color: #ddd;
+  }
+  
+</style>
+<div class="search-container">
+  <input type="text" id="searchInput" oninput="showSuggestions()" placeholder="Search...">
+  <div id="clearButton" class="clear-button">&#10006;</div>
+  <div id="suggestions" class="suggestions"></div>
+</div>
+
+
+<script>
+const suggestions = [
+    "Thằng cu cao 1m70 nặng 60kg đẹp trai nhất đại học sư phạm đà nẵng",
+    "Cút lộn xào me",
+    "Gỏi chân gà rút xương",
+    "Lẩu gà chua cay",
+    "Lòng heo xào chua ngọt",
+    "Sườn chua ngọt",
+    "Thịt heo xào cà chua",
+    "Thịt bò xào giá",
+    "Thịt bò xào lá hẹ",
+    "Thịt kho tàu"
+  ];
+  
+  function showSuggestions() {
+    const input = document.getElementById("searchInput");
+    const filter = input.value.toLowerCase();
+    const suggestionContainer = document.getElementById("suggestions");
+    suggestionContainer.innerHTML = "";
+    const filteredSuggestions = suggestions.filter((item) =>
+      item.toLowerCase().includes(filter)
+    );
+    filteredSuggestions.forEach((item) => {
+      const suggestion = document.createElement("div");
+      suggestion.classList.add("suggestion");
+      suggestion.textContent = item;
+      suggestion.addEventListener("click", function () {
+        redirectToPage(item);
+      });
+      suggestionContainer.appendChild(suggestion);
+    });
+  }
+  
+  function redirectToPage(keyword) {
+    // Tạo một ánh xạ từ khóa với URL tương ứng
+    const keywordUrlMap = {
+      "Thằng cu cao 1m70 nặng 60kg đẹp trai nhất đại học sư phạm đà nẵng":"https://www.facebook.com/taixinh123321/",
+      "Canh khoai tây thịt bò":" https://hoanganh2306.github.io/Cookingweb/laugachuacay.html" ,
+      "banana": "https://www.pinterest.com/news_hub/5353784897188187829",
+      // Thêm các từ khóa và URL tương ứng khác nếu cần thiết
+    };
+  
+    // Kiểm tra xem từ khóa có trong ánh xạ hay không
+    if (keywordUrlMap.hasOwnProperty(keyword)) {
+      // Nếu có, chuyển hướng đến URL tương ứng
+      window.location.href = keywordUrlMap[keyword];
+    } else {
+      // Nếu không, thông báo lỗi
+      console.log("URL not found for keyword:", keyword);
+    }
+  }
+  
+  const searchInput = document.getElementById("searchInput");
+const suggestionContainer = document.getElementById("suggestions");
+
+searchInput.addEventListener("input", function() {
+    suggestionContainer.style.display = "block";
+});
+
+
+searchInput.addEventListener("input", function() {
+    if (searchInput.value.trim() === "") {
+        suggestionContainer.style.display = "none";
+    } else {
+        suggestionContainer.style.display = "block";
+    }
+});
+const clearButton = document.getElementById("clearButton");
+clearButton.addEventListener("click", function() {
+  const searchInput = document.getElementById("searchInput");
+    searchInput.value = ""; // Xóa nội dung của trường tìm kiếm
+    showSuggestions(); // Hiển thị lại danh sách gợi ý
+    hideSuggestions(); // Ẩn gợi ý nếu trường tìm kiếm trống
+});
+function hideSuggestions() {
+    const suggestionContainer = document.getElementById("suggestions");
+    suggestionContainer.style.display = "none";
+}
+</script>
+</body>
+</html>
